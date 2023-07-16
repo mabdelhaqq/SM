@@ -7,63 +7,54 @@ body {
   background-color: gainsboro;
 }
 
-.nav_f {
+.mainhead {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
   background-color: white;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 2;
+  padding: 7px 0;
 }
-
-.right {
+.mainhead .right {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: center;
 }
-
-.logo {
+.mainhead .right .logo {
   width: auto;
-  margin: 0 40px;
+  margin: 0 50px;
 }
-
-.search {
+.mainhead .right .search {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   padding: 5px 15px;
   background-color: #FAFAFA;
   width: 400px;
-  border-radius: 10px;
+  border-radius: 15px;
 }
-.search input {
+.mainhead .right .search input {
   width: 100%;
   border: none;
   background-color: #FAFAFA;
+  padding: 5px 0;
 }
-.search img {
-  width: 25px;
-  height: 25px;
-}
-
-.abbr {
+.mainhead .mainnav {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: flex-end;
   align-items: center;
 }
-
-.f-ul li {
-  list-style: none;
-  display: inline;
-}
-.f-ul li img {
-  margin: 0 3px;
-}
-
-.img_user {
-  border-radius: 50%;
+.mainhead .mainnav a {
+  margin: 0 5px;
 }
 
 .main1 {
@@ -72,156 +63,151 @@ body {
   padding: 0px 2%;
   background-color: #FAFAFA;
 }
-
-.app_menu {
-  padding-top: 70px;
+.main1 .app_menu {
+  padding-top: 80px;
   padding-left: 20px;
   background-color: white;
   position: sticky;
   top: 0;
   left: 0;
   height: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
-
-.links {
+.main1 .app_menu .links {
   display: flex;
   flex-direction: column;
-  padding-bottom: 7%;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 25px;
 }
-.links a {
+.main1 .app_menu .links a {
   text-decoration: none;
-  align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   color: gray;
 }
-
-.user_list {
+.main1 .mainsec {
   padding-top: 50px;
+}
+.main1 .mainsec .headerpost {
+  margin: 5px 0;
+}
+.main1 .mainsec .headerpost h4 {
+  color: gray;
+}
+.main1 .mainsec .headerpost .nav_s {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.main1 .mainsec .headerpost .nav_s a {
+  margin: 0 8px;
+  text-decoration: none;
+  color: gray;
+}
+.main1 .mainsec .mainsection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.main1 .mainsec .mainsection .art {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.main1 .mainsec .mainsection .art .post-info {
+  width: 360px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px 20px;
+}
+.main1 .mainsec .mainsection .art .post-info .na {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.main1 .mainsec .mainsection .art .post-info .na img {
+  border-radius: 50%;
+}
+.main1 .mainsec .mainsection .art .post-info .like {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.main1 .mainsec .mainsection .art .post-info .comment {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.main1 .mainsec .mainsection .art .imgpr {
+  padding: 0 20px;
+  border-top-left-radius: 23px;
+  border-top-right-radius: 23px;
+}
+.main1 .mainsec .mainsection .art .sus {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.main1 .user_list {
+  padding-top: 60px;
   padding-left: 20px;
   background-color: white;
   position: sticky;
   top: 0;
   height: 100%;
-  padding-bottom: 100px;
-  margin-right: 0;
+  padding-bottom: 80px;
 }
-
-.content {
-  flex-basis: 50%;
-}
-
-.search-c {
+.main1 .user_list .search-c {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  padding: 0 10px;
+  padding: 0px 10px;
   background-color: white;
   width: 250px;
-  border-radius: 10px;
-  margin-bottom: 10px;
+  border-radius: 15px;
+  margin-bottom: 15px;
 }
-.search-c input {
+.main1 .user_list .search-c input {
   width: 100%;
   border: none;
   background-color: white;
+  padding: 5px 0;
 }
-.search-c img {
-  width: 20px;
-  height: 20px;
+.main1 .user_list .people {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
-
-.person {
+.main1 .user_list .people .person {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   align-items: center;
-  margin: 10px 5px;
+  margin: 12px 0;
 }
-.person img {
+.main1 .user_list .people .person img {
   border-radius: 50%;
   margin-right: 5px;
 }
 
-.people {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.headerpost {
-  margin: 5px 0;
-}
-.headerpost h4 {
-  color: gray;
-}
-.headerpost .nav_s .list-post {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.headerpost .nav_s a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: gray;
-}
-
-.post-info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.post-info .na {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: center;
-}
-.post-info .like {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: center;
-}
-.post-info .comment {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.au {
-  border-radius: 50%;
-}
-
-article {
-  background-color: white;
-  margin: 1px;
-}
-
-.sec1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.mainsec {
-  padding-top: 50px;
-}
-
 .he {
   color: #6D3DDA;
-}
-
-.imgpr {
-  padding: 7px;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
 }/*# sourceMappingURL=main.css.map */

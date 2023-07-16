@@ -17,19 +17,29 @@ body {
   background-color: $background-color;
 }
 
-.nav_f {
+.mainhead {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
   background-color: white;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 2;
+  padding: 7px 0;
 
   .right {
-    @include flex-center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
     
     .logo {
       width: auto;
-      margin: 0 40px;
+      margin: 0 50px;
     }
 
     .search {
@@ -37,32 +47,25 @@ body {
       padding: 5px 15px;
       background-color: #FAFAFA;
       width: 400px;
+      border-radius: 15px;
 
       input {
         width: 100%;
         border: none;
         background-color: #FAFAFA;
-      }
-
-      img {
-        width: 25px;
-        height: 25px;
+        padding: 5px 0;
       }
     }
   }
 
-  .abbr {
-    @include flex-center;
-    
-    .f-ul {
-      li {
-        list-style: none;
-        display: inline;
-
-        img {
-          margin: 0 3px;
-        }
-      }
+  .mainnav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+      a {
+        margin: 0 5px;
     }
   }
 }
@@ -74,24 +77,24 @@ body {
   background-color: #FAFAFA;
 
   .app_menu {
-    padding-top: 70px;
+    padding-top: 80px;
     padding-left: 20px;
     background-color: white;
     position: sticky;
     top: 0;
     left: 0;
     height: 100%;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 
     .links {
       display: flex;
       flex-direction: column;
-      padding-bottom: 7%;
-
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-bottom: 25px;
       a {
         text-decoration: none;
-        align-items: center;
-        margin-bottom: 20px;
+        margin-bottom: 18px;
         color: gray;
       }
     }
@@ -108,95 +111,125 @@ body {
       }
 
       .nav_s {
-        .list-post {
           display: flex;
           flex-direction: row;
-          justify-content: space-between;
+          justify-content: flex-end;
           align-items: center;
-        }
-
         a {
-          margin: 0 10px;
+          margin: 0 8px;
           text-decoration: none;
           color: gray;
         }
       }
     }
 
-    .post-info {
+    .mainsection {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-
-      .na {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      .art {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: nowrap;
         justify-content: flex-start;
-        align-items: center;
-      }
+        align-items: flex-start;
+        margin-bottom: 10px;
+        .post-info {
+          width: 360px;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          padding: 5px 20px;
+          .na {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
 
-      .like, .comment {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        align-items: center;
-      }
-    }
+            img {
+              border-radius: 50%;
+            }
+          }
 
-    .imgpr {
-      padding: 7px;
-      border-top-left-radius: 12px;
-      border-top-right-radius: 12px;
+          .like {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+            align-items: center;
+          }
+    
+           .comment {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+            align-items: center;
+          }
+        }
+        .imgpr {
+          padding: 0 20px;
+          border-top-left-radius: 23px;
+          border-top-right-radius: 23px;
+        }
+        .sus {
+          padding: 0 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+        }
+      }
     }
   }
 
   .user_list {
-    padding-top: 50px;
+    padding-top: 60px;
     padding-left: 20px;
     background-color: white;
     position: sticky;
     top: 0;
     height: 100%;
-    padding-bottom: 100px;
-    margin-right: 0;
-
+    padding-bottom: 80px;
     .search-c {
       @include flex-center;
-      padding: 0 10px;
+      padding: 0px 10px;
       background-color: white;
       width: 250px;
-      border-radius: 10px;
-      margin-bottom: 10px;
+      border-radius: 15px;
+      margin-bottom: 15px;
 
       input {
         width: 100%;
         border: none;
         background-color: white;
-      }
-
-      img {
-        width: 20px;
-        height: 20px;
-      }
-    }
-
-    .person {
-      @include flex-center;
-
-      img {
-        border-radius: 50%;
-        margin-right: 5px;
+        padding: 5px 0;
       }
     }
 
     .people {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: flex-start;
+
+      .person {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 12px 0;
+  
+        img {
+          border-radius: 50%;
+          margin-right: 5px;
+        }
+      }
     }
   }
 }

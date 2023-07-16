@@ -6,246 +6,239 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <title>Socl</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="stylee.css">
 </head>
 <body>
-<header>
-        <nav class="nav_f row">
-            <div class="right col-6">
-                    <img src="images/logo.png" alt="logo_image" class="logo" width="30px" height="30px">
-                <div class="search d-none d-md-flex">
-                    <input type="search" id="search" name="search" placeholder="Search">
-                    <img src="images/search-icon.png">
-                </div>
-            </div>
-            <div class="abbr col-6">
-                <ul class="f-ul">
-                    <li><img src="images/add_friend.png" width="25px" height="25px"></li>
-                    <li><img src="images/chat.png" width="25px" height="25px"></li>
-                    <li><img src="images/notification.png" width="25px" height="25px"></li>
-                    <li><img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=b" width="25px" height="25px" class="img_user"></li>
-                    <li><img src="images/arrow.png" width="25px" height="25px"></li>
-                </ul>
-            </div>
-        </nav>
+<header class="row mainhead">
+    <div class="right col-6">
+        <img src="images/logo.png" alt="logo_image" class="logo" height="30px">
+        <div class="search d-none d-md-flex">
+            <input type="search" id="search" name="search" placeholder="Search">
+            <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #646464;"></i>
+        </div>
+    </div>
+    <nav class="col-6 mainnav">
+        <a href="#"><i class="fa-solid fa-user-group" style="color: #646464;"></i></a>
+        <a href="#"><i class="fa-brands fa-rocketchat" style="color: #646464;"></i></a>
+        <a href="#"><i class="fa-solid fa-bell" style="color: #646464;"></i></a>
+        <a href="#"><img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=A" width="25px" height="25px" style="border-radius: 50%;"></a>
+        <a href="#"><i class="fa-solid fa-arrow-right fa-rotate-90" style="color: #646464;"></i></a>
+    </nav>
 </header>
-        <main class="main1 row">
+<main class="main1 row">
             <aside class="app_menu col-2 d-none d-md-block">
-                <div class="links">
-                    <a href="#"><img src="images/feed.png" width="25px" height="25px"> Feed</a>
-                    <a href="#"><img src="images/fr.jpg" width="25px" height="25px"> Friends</a>
-                    <a href="#"><img src="images/events.png" width="25px" height="25px"> Events</a>
-                    <a href="#"><img src="images/vi.png" width="25px" height="25px"> Watch videos</a>
-                    <a href="#"><img src="images/ph.png" width="25px" height="25px"> Photos</a>
-                    <a href="#"><img src="images/fi.png" width="25px" height="25px"> Fies</a>
-                </div>
-                <br>
-                <p style="color: gray">PAGES YOU LIKE</p>
-                <div class="links">
+                <nav class="links">
+                    <a href="#"><i class="fa-sharp fa-solid fa-rss fa-xl" style="color: #646464;"></i> Feed</a>
+                    <a href="#"><i class="fa-sharp fa-solid fa-user-group fa-lg"></i> Friends</a>
+                    <a href="#"><i class="fa-solid fa-calendar-days fa-lg" style="color: #646464;"></i> Events</a>
+                    <a href="#"><i class="fa-solid fa-video fa-lg" style="color: #646464;"></i> Watch videos</a>
+                    <a href="#"><i class="fa-solid fa-image fa-lg" style="color: #646464;"></i> Photos</a>
+                    <a href="#"><i class="fa-solid fa-file fa-lg" style="color: #646464;"></i> Files</a>
+                </nav>
+                <p style="color: gray;">PAGES YOU LIKE</p>
+                <nav class="links">
                     <a href="#"><img src="images/fash.jpg" width="25px" height="25px"> Graphics Design</a>
                     <a href="#"><img src="images/gr.png" width="25px" height="25px"> Graphics Design</a>
                     <a href="#"><img src="images/ui.png" width="25px" height="25px"> UI/UX Community</a>
                     <a href="#"><img src="images/web.png" width="25px" height="25px"> Web Designer</a>
-                </div>
+                </nav>
             </aside>
             
             <section class="col-12 col-md-7 mainsec">
                 <header class="headerpost row">
                     <h4 class="col-6">Recent post</h4>
                     <nav class="nav_s col-6">
-                        <div calss="list-post">
                             <a href="#">Feeds</a>
                             <a href="#">All</a>
                             <a href="#">Following</a>
                             <a href="#">Latest</a>
                             <a href="#">Populor</a>
-                        </div>
                     </nav>
                 </header>
-                <section class="postsec">
-                    <section class="sec1 row">
-                        <article class="col-10 col-md-5 container">
-                            <div class="row">
-                            <img src="images/p1.jpg" width="300px" height="150px" class="col-12 imgpr"></div>
-                            <div class="post-info">
-                            <div class="na">
-                            <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=z" width="35px" height="35px" class="au">
-                            <h6>Nancy Lee</h6>
-                            </div>
-                            <div class="like">
-                                <img src="images/love.png" width="20px" height="20px">
-                                <h6>1125</h6>
-                                </div>
-                                <div class="comment">
-                                <img src="images/comment.png" width="20px" height="20px">
-                                <h6>348</h6>
-                                </div>
-                            </div>
+                    <section class="row mainsection">
+                        <article class="col-12 col-md-6 art">
                             <div>
-                            <h4 class="he">#suscipit</h4>
-                            <p>description of article description of article description of article description of article description of article description of article description of article</p>
-                        </div>
+                                <img src="images/p1.jpg" width="360px" height="180px" class="imgpr">
+                            </div>
+                            <div class="post-info row">
+                                <div class="na col-6">
+                                    <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=z" width="35px" height="35px" class="au">
+                                    <h6>Nancy Lee</h6>
+                                </div>
+                                <div class="like col-3">
+                                    <img src="images/love.png" width="20px" height="20px">
+                                    <h6>1125</h6>
+                                </div>
+                                <div class="comment col-3">
+                                    <img src="images/comment.png" width="20px" height="20px">
+                                    <h6>348</h6>
+                                </div>
+                            </div>
+                            <div class="sus">
+                                <h4 class="he">#suscipit</h4>
+                                <p>description of article description of article description of article description of article description of article description of article description of article</p>
+                            </div>
                         </article>
-                        <article class="col-10 col-md-5 container">
-                            <div class="row">
-                            <img src="images/p2.jpg" width="300px" height="150px" class="col-12 imgpr"></div>
-                            <div class="post-info">
-                            <div class="na">
-                            <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=k" width="35px" height="35px" class="au">
-                            <h6>Niok Powoell</h6>
-                            </div>
-                            <div class="like">
-                                <img src="images/love.png" width="20px" height="20px">
-                                <h6>1125</h6>
-                                </div>
-                                <div class="comment">
-                                <img src="images/comment.png" width="20px" height="20px">
-                                <h6>348</h6>
-                                </div>
-                            </div>
+                        <article class="col-12 col-md-6 art">
                             <div>
-                            <h4 class="he">#suscipit</h4>
-                            <p>description of article description of article description of article description of article description of article description of article description of article</p>
-                        </div>
+                                <img src="images/p1.jpg" width="360px" height="180px" class="imgpr">
+                            </div>
+                            <div class="post-info row">
+                                <div class="na col-6">
+                                    <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=z" width="35px" height="35px" class="au">
+                                    <h6>Nancy Lee</h6>
+                                </div>
+                                <div class="like col-3">
+                                    <img src="images/love.png" width="20px" height="20px">
+                                    <h6>1125</h6>
+                                </div>
+                                <div class="comment col-3">
+                                    <img src="images/comment.png" width="20px" height="20px">
+                                    <h6>348</h6>
+                                </div>
+                            </div>
+                            <div class="sus">
+                                <h4 class="he">#suscipit</h4>
+                                <p>description of article description of article description of article description of article description of article description of article description of article</p>
+                            </div>
+                        </article>
+                        <article class="col-12 col-md-6 art">
+                            <div>
+                                <img src="images/p1.jpg" width="360px" height="180px" class="imgpr">
+                            </div>
+                            <div class="post-info row">
+                                <div class="na col-6">
+                                    <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=z" width="35px" height="35px" class="au">
+                                    <h6>Nancy Lee</h6>
+                                </div>
+                                <div class="like col-3">
+                                    <img src="images/love.png" width="20px" height="20px">
+                                    <h6>1125</h6>
+                                </div>
+                                <div class="comment col-3">
+                                    <img src="images/comment.png" width="20px" height="20px">
+                                    <h6>348</h6>
+                                </div>
+                            </div>
+                            <div class="sus">
+                                <h4 class="he">#suscipit</h4>
+                                <p>description of article description of article description of article description of article description of article description of article description of article</p>
+                            </div>
+                        </article>
+                        <article class="col-12 col-md-6 art">
+                            <div>
+                                <img src="images/p1.jpg" width="360px" height="180px" class="imgpr">
+                            </div>
+                            <div class="post-info row">
+                                <div class="na col-6">
+                                    <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=z" width="35px" height="35px" class="au">
+                                    <h6>Nancy Lee</h6>
+                                </div>
+                                <div class="like col-3">
+                                    <img src="images/love.png" width="20px" height="20px">
+                                    <h6>1125</h6>
+                                </div>
+                                <div class="comment col-3">
+                                    <img src="images/comment.png" width="20px" height="20px">
+                                    <h6>348</h6>
+                                </div>
+                            </div>
+                            <div class="sus">
+                                <h4 class="he">#suscipit</h4>
+                                <p>description of article description of article description of article description of article description of article description of article description of article</p>
+                            </div>
+                        </article>
+                        <article class="col-12 col-md-6 art">
+                            <div>
+                                <img src="images/p1.jpg" width="360px" height="180px" class="imgpr">
+                            </div>
+                            <div class="post-info row">
+                                <div class="na col-6">
+                                    <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=z" width="35px" height="35px" class="au">
+                                    <h6>Nancy Lee</h6>
+                                </div>
+                                <div class="like col-3">
+                                    <img src="images/love.png" width="20px" height="20px">
+                                    <h6>1125</h6>
+                                </div>
+                                <div class="comment col-3">
+                                    <img src="images/comment.png" width="20px" height="20px">
+                                    <h6>348</h6>
+                                </div>
+                            </div>
+                            <div class="sus">
+                                <h4 class="he">#suscipit</h4>
+                                <p>description of article description of article description of article description of article description of article description of article description of article</p>
+                            </div>
+                        </article>
+                        <article class="col-12 col-md-6 art">
+                            <div>
+                                <img src="images/p1.jpg" width="360px" height="180px" class="imgpr">
+                            </div>
+                            <div class="post-info row">
+                                <div class="na col-6">
+                                    <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=z" width="35px" height="35px" class="au">
+                                    <h6>Nancy Lee</h6>
+                                </div>
+                                <div class="like col-3">
+                                    <img src="images/love.png" width="20px" height="20px">
+                                    <h6>1125</h6>
+                                </div>
+                                <div class="comment col-3">
+                                    <img src="images/comment.png" width="20px" height="20px">
+                                    <h6>348</h6>
+                                </div>
+                            </div>
+                            <div class="sus">
+                                <h4 class="he">#suscipit</h4>
+                                <p>description of article description of article description of article description of article description of article description of article description of article</p>
+                            </div>
                         </article>
                     </section>
-                    <br>
-                    <secttion class="sec1 row">
-                        <article class="col-10 col-md-5 container">
-                            <div class="row">
-                            <img src="images/p3.jpg" width="300px" height="150px" class="col-12 imgpr"></div>
-                            <div class="post-info">
-                            <div class="na">
-                            <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=d" width="35px" height="35px" class="au">
-                            <h6>Ronald Roocets</h6>
-                            </div>
-                            <div class="like">
-                                <img src="images/love.png" width="20px" height="20px">
-                                <h6>1125</h6>
-                                </div>
-                                <div class="comment">
-                                <img src="images/comment.png" width="20px" height="20px">
-                                <h6>348</h6>
-                                </div>
-                            </div>
-                            <div>
-                            <h4 class="he">#suscipit</h4>
-                            <p>description of article description of article description of article description of article description of article description of article description of article</p>
-                        </div>
-                        </article>
-                        <article class="col-10 col-md-5 container">
-                            <div class="row">
-                            <img src="images/p4.jpg" width="300px" height="150px" class="col-12 imgpr"></div>
-                            <div class="post-info">
-                            <div class="na">
-                            <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=t" width="35px" height="35px" class="au">
-                            <h6>Alex Guerrero</h6>
-                            </div>
-                            <div class="like">
-                                <img src="images/love.png" width="20px" height="20px">
-                                <h6>1125</h6>
-                                </div>
-                                <div class="comment">
-                                <img src="images/comment.png" width="20px" height="20px">
-                                <h6>348</h6>
-                                </div>
-                            </div>
-                            <div>
-                            <h4 class="he">#suscipit</h4>
-                            <p>description of article description of article description of article description of article description of article description of article description of article</p>
-                        </div>
-                        </article>
-                    </secttion>
-                    <br>
-                    <section class="sec1 row">
-                        <article class="col-10 col-md-5 container">
-                            <div class="row">
-                            <img src="images/p4.jpg" width="300px" height="150px" class="col-12 imgpr"></div>
-                            <div class="post-info">
-                            <div class="na">
-                            <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=s" width="35px" height="35px" class="au">
-                            <h6>Nancy Lee</h6>
-                            </div>
-                            <div class="like">
-                                <img src="images/love.png" width="20px" height="20px">
-                                <h6>1125</h6>
-                                </div>
-                                <div class="comment">
-                                <img src="images/comment.png" width="20px" height="20px">
-                                <h6>348</h6>
-                                </div>
-                            </div>
-                            <div>
-                            <h4 class="he">#suscipit</h4>
-                            <p>description of article description of article description of article description of article description of article description of article description of article</p>
-                        </div>
-                        </article>
-                        <article class="col-10 col-md-5 container">
-                            <div class="row">
-                            <img src="images/p1.jpg" width="300px" height="150px" class="col-12 imgpr"></div>
-                            <div class="post-info">
-                            <div class="na">
-                            <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=e" width="35px" height="35px" class="au">
-                            <h6>Ronald Roocets</h6>
-                            </div>
-                            <div class="like">
-                                <img src="images/love.png" width="20px" height="20px">
-                                <h6>1125</h6>
-                                </div>
-                                <div class="comment">
-                                <img src="images/comment.png" width="20px" height="20px">
-                                <h6>348</h6>
-                                </div>
-                            </div>
-                            <div>
-                            <h4 class="he">#suscipit</h4>
-                            <p>description of article description of article description of article description of article description of article description of article description of article</p>
-                        </div>
-                        </article>
-                    </section>
-                </section>
+                    
+                    
             </section>
 
             <aside class="user_list col-3 d-none d-md-block">
                 <div class="search-c">
-                    <img src="images/search-icon.png">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #646464;"></i>
                     <input type="search" id="search1" name="search" placeholder="  Search">
                 </div>
                 <p style="color: gray">FRIENDS</p>
                 <div class="people">
-                <div class="person">
-                    <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=p" width="35px" height="35px" class="au">
-                    <p>Alex Guerrero</p>
-                </div>
-                <div class="person">
-                    <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=s" width="35px" height="35px">
-                    <p>Sara Mendoza</p>
-                </div>
-                <div class="person">
-                    <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=d" width="35px" height="35px">
-                    <p>Ronald Roocets</p>
-                </div>
-                <div class="person">
-                    <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=f" width="35px" height="35px">
-                    <p>Nancy Lee</p>
-                </div>
-                <div class="person">
-                    <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=g" width="35px" height="35px">
-                    <p>Maria Jackson</p>
-                </div>
-                <div class="person">
-                    <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=h" width="35px" height="35px">
-                    <p>Niok Powoell</p>
-                </div>
-                <div class="person">
-                    <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=j" width="35px" height="35px">
-                    <p>Alex Fretolo</p>
-                </div>
+                    <div class="person">
+                        <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=p" width="35px" height="35px">
+                        <h6>Alex Guerrero</h6>
+                    </div>
+                    <div class="person">
+                        <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=s" width="35px" height="35px">
+                        <h6>Sara Mendoza</h6>
+                    </div>
+                    <div class="person">
+                        <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=d" width="35px" height="35px">
+                        <h6>Ronald Roocets</h6>
+                    </div>
+                    <div class="person">
+                        <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=f" width="35px" height="35px">
+                        <h6>Nancy Lee</h6>
+                    </div>
+                    <div class="person">
+                        <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=g" width="35px" height="35px">
+                        <h6>Maria Jackson</h6>
+                    </div>
+                    <div class="person">
+                        <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=h" width="35px" height="35px">
+                        <h6>Niok Powoell</h6>
+                    </div>
+                    <div class="person">
+                        <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=j" width="35px" height="35px">
+                        <h6>Alex Fretolo</6>
+                    </div>
                 </div>
             </aside>
-        </main>
-    </div>
+</main>
 
 
 
