@@ -158,6 +158,7 @@ body {
   border-top-right-radius: 23px;
 }
 .main1 .mainsec .mainsection .art .sus {
+  width: 360px;
   padding: 0 20px;
   display: flex;
   flex-direction: column;
