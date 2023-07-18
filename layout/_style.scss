@@ -136,13 +136,20 @@ body {
         justify-content: flex-start;
         align-items: flex-start;
         margin-bottom: 10px;
+        .post-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          margin-bottom: 20px;
+        }
         .post-info {
-          width: 360px;
           display: flex;
           flex-direction: row;
           justify-content: flex-start;
           align-items: center;
-          padding: 5px 20px;
+          padding: 5px 0px;
+          padding-left: 20px;
           .na {
             display: flex;
             flex-direction: row;
