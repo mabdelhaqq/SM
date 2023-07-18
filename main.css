@@ -120,13 +120,20 @@ body {
   align-items: flex-start;
   margin-bottom: 10px;
 }
+.main1 .mainsec .mainsection .art .post-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
 .main1 .mainsec .mainsection .art .post-info {
-  width: 360px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  padding: 5px 20px;
+  padding: 5px 0px;
+  padding-left: 20px;
 }
 .main1 .mainsec .mainsection .art .post-info .na {
   display: flex;
