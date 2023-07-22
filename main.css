@@ -88,84 +88,119 @@ body {
 .main1 .mainsec {
   padding-top: 50px;
 }
-.main1 .mainsec .headerpost {
+.main1 .mainsec .headerinner {
   margin: 5px 0;
 }
-.main1 .mainsec .headerpost h4 {
+.main1 .mainsec .headerinner h4 {
   color: gray;
 }
-.main1 .mainsec .headerpost .nav_s {
+.main1 .mainsec .headerinner .nav_s {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
 }
-.main1 .mainsec .headerpost .nav_s a {
+.main1 .mainsec .headerinner .nav_s a {
   margin: 0 8px;
   text-decoration: none;
   color: gray;
 }
-.main1 .mainsec .mainsection {
+.main1 .mainsec .mainstosec {
   display: flex;
-  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  margin-bottom: 30px;
+}
+.main1 .mainsec .mainstosec .story {
+  width: 150px;
+  margin: 0 10px;
+}
+.main1 .mainsec .mainstosec .story img {
+  width: 100%;
+  border-radius: 5px;
+}
+.main1 .mainsec .mainstosec .story .sto-info {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: -40px;
+  margin-left: -10px;
+}
+.main1 .mainsec .mainstosec .story .sto-info .img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.main1 .mainsec .mainstosec .story .sto-info h6 {
+  font-size: 10px;
+  color: white;
+  font-weight: bold;
+}
+.main1 .mainsec .mainpostsec {
+  display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
 }
-.main1 .mainsec .mainsection .art {
+.main1 .mainsec .mainpostsec .art {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-bottom: 10px;
+  width: 360px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 10px;
 }
-.main1 .mainsec .mainsection .art .post-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-bottom: 20px;
+.main1 .mainsec .mainpostsec .art a {
+  text-decoration: none;
+  color: black;
 }
-.main1 .mainsec .mainsection .art .post-info {
+.main1 .mainsec .mainpostsec .art a .post-info {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  padding: 5px 0px;
-  padding-left: 20px;
+  padding: 0 20px;
+  margin: 10px 0;
 }
-.main1 .mainsec .mainsection .art .post-info .na {
+.main1 .mainsec .mainpostsec .art a .post-info .na {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
 }
-.main1 .mainsec .mainsection .art .post-info .na img {
+.main1 .mainsec .mainpostsec .art a .post-info .na img {
   border-radius: 50%;
 }
-.main1 .mainsec .mainsection .art .post-info .like {
+.main1 .mainsec .mainpostsec .art a .post-info .like {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: flex-end;
   align-items: center;
 }
-.main1 .mainsec .mainsection .art .post-info .comment {
+.main1 .mainsec .mainpostsec .art a .post-info .comment {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: flex-end;
   align-items: center;
 }
-.main1 .mainsec .mainsection .art .imgpr {
-  padding: 0 20px;
-  border-top-left-radius: 23px;
-  border-top-right-radius: 23px;
+.main1 .mainsec .mainpostsec .art a .imgpr {
+  padding: 3px 3px;
+  margin: auto;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
-.main1 .mainsec .mainsection .art .sus {
-  width: 360px;
+.main1 .mainsec .mainpostsec .art a .sus {
+  width: 100%;
   padding: 0 20px;
   display: flex;
   flex-direction: column;

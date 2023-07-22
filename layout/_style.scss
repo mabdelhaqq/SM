@@ -103,7 +103,7 @@ body {
   .mainsec {
     padding-top: 50px;
 
-    .headerpost {
+    .headerinner {
       margin: 5px 0;
       
       h4 {
@@ -122,10 +122,46 @@ body {
         }
       }
     }
-
-    .mainsection {
+    .mainstosec {
       display: flex;
-      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      margin-bottom: 30px;
+
+      .story {
+        width: 150px;
+        margin: 0 10px;
+
+        img {
+          width: 100%;
+          border-radius: 5px;
+        }
+
+        .sto-info {
+          display: flex;
+          width: 100%;
+          justify-content: flex-start;
+          align-items: center;
+          margin-top: -40px;
+          margin-left: -10px;
+          .img {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            margin-right: 5px;
+          }
+          h6 {
+            font-size: 10px;
+            color:white;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    .mainpostsec {
+      display: flex;
       flex-wrap: wrap;
       justify-content: flex-start;
       align-items: flex-start;
@@ -135,21 +171,21 @@ body {
         flex-wrap: nowrap;
         justify-content: flex-start;
         align-items: flex-start;
-        margin-bottom: 10px;
-        .post-container {
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
-          align-items: flex-start;
-          margin-bottom: 20px;
-        }
+        width: 360px;
+        margin: 10px;
+        background-color: white;
+        border-radius: 10px;
+        a {
+          text-decoration: none;
+          color: black;
         .post-info {
+          width: 100%;
           display: flex;
           flex-direction: row;
           justify-content: flex-start;
           align-items: center;
-          padding: 5px 0px;
-          padding-left: 20px;
+          padding: 0 20px;
+          margin: 10px 0;
           .na {
             display: flex;
             flex-direction: row;
@@ -179,12 +215,13 @@ body {
           }
         }
         .imgpr {
-          padding: 0 20px;
-          border-top-left-radius: 23px;
-          border-top-right-radius: 23px;
+          padding: 3px 3px;
+          margin: auto;
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
         }
         .sus {
-          width: 360px;
+          width: 100%;
           padding: 0 20px;
           display: flex;
           flex-direction: column;
@@ -192,6 +229,7 @@ body {
           align-items: flex-start;
         }
       }
+    }
     }
   }
 
