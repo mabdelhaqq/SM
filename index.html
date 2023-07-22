@@ -11,9 +11,10 @@
   <link rel="stylesheet" href="stylee.css">
 </head>
 <body>
+    
 <header class="row mainhead">
     <div class="right col-6">
-        <img src="images/logo.png" alt="logo_image" class="logo" height="30px">
+        <a href="#"><img src="images/logo.png" alt="logo_image" class="logo" height="30px"></a>
         <div class="search d-none d-md-flex">
             <input type="search" id="search" name="search" placeholder="Search">
             <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #646464;"></i>
@@ -21,14 +22,15 @@
     </div>
     <nav class="col-6 mainnav">
         <a href="#"><i class="fa-solid fa-user-group" style="color: #646464;"></i></a>
-        <a href="#"><i class="fa-brands fa-rocketchat" style="color: #646464;"></i></a>
-        <a href="#"><i class="fa-solid fa-bell" style="color: #646464;"></i></a>
+        <a href="#"><i class="fa-brands fa-rocketchat new" style="color: #646464;"></i></a>
+        <a href="#"><i class="fa-solid fa-bell new" style="color: #646464;"></i></a>
         <a href="#"><img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=A" width="25px" height="25px" style="border-radius: 50%;"></a>
         <a href="#"><i class="fa-solid fa-arrow-right fa-rotate-90" style="color: #646464;"></i></a>
     </nav>
 </header>
-<main class="main1 row">
-            <aside class="app_menu col-2 d-none d-lg-block">
+<main class="main1 row ms-0 me-0">
+            <button id="appMenuButton" class="toggle-button1 d-md-none"><i class="fa-solid fa-grip-lines fa-lg" style="color: #464646;"></i></button>
+            <aside class="app_menu col-2 d-none d-md-block">
                 <nav class="links">
                     <a href="#"><i class="fa-sharp fa-solid fa-rss fa-xl" style="color: #646464;"></i> Feed</a>
                     <a href="#"><i class="fa-sharp fa-solid fa-user-group fa-lg"></i> Friends</a>
@@ -46,12 +48,12 @@
                 </nav>
             </aside>
             
-            <section class="col-12 col-lg-7 mainsec">
-                <header class="headerinner row">
+            <section class="col-12 col-md-7 mainsec">
+                <header class="headerstory row">
                     <h4 class="col-12">Stories</h4>
                 </header>
                 <section class="row mainstosec">
-                    <article class="story">
+                    <article class="story col-4 col-md-3 col-lg-2 col-xl-1">
                         <a href="#">
                         <img src="images/p1.jpg" alt="Story Image" width="100px" height="150px">
                         <div class="sto-info">
@@ -60,7 +62,7 @@
                         </div>
                         </a>
                     </article>
-                    <article class="story">
+                    <article class="story col-4 col-md-3 col-lg-2 col-xl-1">
                         <a href="#">
                         <img src="images/p1.jpg" alt="Story Image" width="100px" height="150px">
                         <div class="sto-info">
@@ -69,7 +71,7 @@
                         </div>
                         </a>
                     </article>
-                    <article class="story">
+                    <article class="story col-4 col-md-3 col-lg-2 col-xl-1">
                         <a href="#">
                         <img src="images/p1.jpg" alt="Story Image" width="100px" height="150px">
                         <div class="sto-info">
@@ -78,7 +80,7 @@
                         </div>
                         </a>
                     </article>
-                    <article class="story">
+                    <article class="story col-4 col-md-3 col-lg-2 col-xl-1">
                         <a href="#">
                         <img src="images/p1.jpg" alt="Story Image" width="100px" height="150px">
                         <div class="sto-info">
@@ -87,7 +89,7 @@
                         </div>
                         </a>
                     </article>
-                    <article class="story">
+                    <article class="story col-4 col-md-3 col-lg-2 col-xl-1">
                         <a href="#">
                         <img src="images/p1.jpg" alt="Story Image" width="100px" height="150px">
                         <div class="sto-info">
@@ -96,6 +98,17 @@
                         </div>
                         </a>
                     </article>
+                    <article class="story col-4 col-md-3 col-lg-2 col-xl-1">
+                        <a href="#">
+                        <img src="images/p1.jpg" alt="Story Image" width="100px" height="150px">
+                        <div class="sto-info">
+                          <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=s" alt="User Image" width="25px" height="25px">
+                          <h6>Maria Jackson</h6>
+                        </div>
+                        </a>
+                    </article>
+
+                    
                 </section>
 
                 <header class="headerinner row">
@@ -111,7 +124,7 @@
                 <section class="row mainpostsec">
                     <article class="col-12 col-md-6 art">
                         <a href="#">
-                        <img src="images/p1.jpg" width="340px" height="180px" class="imgpr">
+                        <img src="images/p1.jpg" width="330px" height="180px" class="imgpr">
                         <div class="post-info row">
                             <div class="na col-6">
                                 <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=z" width="35px" height="35px" class="au">
@@ -134,7 +147,7 @@
                     </article>
                     <article class="col-12 col-md-6 art">
                         <a href="#">
-                        <img src="images/p1.jpg" width="340px" height="180px" class="imgpr">
+                        <img src="images/p1.jpg" width="330px" height="180px" class="imgpr">
                         <div class="post-info row">
                             <div class="na col-6">
                                 <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=z" width="35px" height="35px" class="au">
@@ -157,7 +170,7 @@
                     </article>
                     <article class="col-12 col-md-6 art">
                         <a href="#">
-                        <img src="images/p1.jpg" width="340px" height="180px" class="imgpr">
+                        <img src="images/p1.jpg" width="330px" height="180px" class="imgpr">
                         <div class="post-info row">
                             <div class="na col-6">
                                 <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=z" width="35px" height="35px" class="au">
@@ -180,7 +193,7 @@
                     </article>
                     <article class="col-12 col-md-6 art">
                         <a href="#">
-                        <img src="images/p1.jpg" width="340px" height="180px" class="imgpr">
+                        <img src="images/p1.jpg" width="330px" height="180px" class="imgpr">
                         <div class="post-info row">
                             <div class="na col-6">
                                 <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=z" width="35px" height="35px" class="au">
@@ -201,52 +214,52 @@
                         </div>
                         </a>
                     </article>
-
 
                 </section>
                     
                     
             </section>
 
-            <aside class="user_list col-3 d-none d-lg-block">
+            <button id="userListButton" class="toggle-button2 d-md-none"><i class="fa-solid fa-grip-lines fa-lg" style="color: #464646;"></i></button>
+            <aside class="user_list col-3 d-none d-md-block">
                 <div class="search-c">
                     <i class="fa-solid fa-magnifying-glass" style="color: #646464;"></i>
                     <input type="search" id="search1" name="search" placeholder="  Search">
                 </div>
                 <p style="color: gray">FRIENDS</p>
                 <div class="people">
-                    <div class="person">
+                    <a href="#"><div class="person">
                         <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=p" width="35px" height="35px">
                         <h6>Alex Guerrero</h6>
-                    </div>
-                    <div class="person">
+                    </div></a>
+                    <a href="#"><div class="person">
                         <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=s" width="35px" height="35px">
                         <h6>Sara Mendoza</h6>
-                    </div>
-                    <div class="person">
+                    </div></a>
+                    <a href="#"><div class="person">
                         <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=d" width="35px" height="35px">
                         <h6>Ronald Roocets</h6>
-                    </div>
-                    <div class="person">
+                    </div></a>
+                    <a href="#"><div class="person">
                         <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=f" width="35px" height="35px">
                         <h6>Nancy Lee</h6>
-                    </div>
-                    <div class="person">
+                    </div></a>
+                    <a href="#"><div class="person">
                         <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=g" width="35px" height="35px">
                         <h6>Maria Jackson</h6>
-                    </div>
-                    <div class="person">
+                    </div></a>
+                    <a href="#"><div class="person">
                         <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=h" width="35px" height="35px">
                         <h6>Niok Powoell</h6>
-                    </div>
-                    <div class="person">
-                        <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=j" width="35px" height="35px">
-                        <h6>Alex Fretolo</6>
-                    </div>
+                    </div></a>
                 </div>
             </aside>
 </main>
-
+<footer class="footer row">
+    <a href="#"><img src="images/logo.png" alt="logo_image" class="logo col-6" height="20px"></a>
+    <p class="col-6">&copy; 2023 Socl. All rights reserved.</p>
+  </footer>
+  
 
 
 
@@ -261,6 +274,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>
+  <script src="main.js"></script>
 </body>
 
 </html>

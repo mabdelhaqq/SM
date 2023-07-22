@@ -1,10 +1,14 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
 }
 
 body {
   background-color: gainsboro;
+  overflow-x: hidden;
 }
 
 .mainhead {
@@ -17,8 +21,9 @@ body {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 2;
+  z-index: 15;
   padding: 7px 0;
+  margin: 0 auto;
 }
 .mainhead .right {
   display: flex;
@@ -30,6 +35,7 @@ body {
 .mainhead .right .logo {
   width: auto;
   margin: 0 50px;
+  display: block;
 }
 .mainhead .right .search {
   display: flex;
@@ -45,6 +51,7 @@ body {
   border: none;
   background-color: #FAFAFA;
   padding: 5px 0;
+  outline: none;
 }
 .mainhead .mainnav {
   display: flex;
@@ -54,24 +61,67 @@ body {
   align-items: center;
 }
 .mainhead .mainnav a {
-  margin: 0 5px;
+  margin: 0 7px;
+  display: inline-block;
+}
+.mainhead .mainnav a:hover {
+  opacity: 0.8;
+}
+.mainhead .mainnav a .new {
+  position: relative;
+}
+.mainhead .mainnav a .new::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border: 1px solid #6D3DDA;
+  border-radius: 50%;
+  background-color: #6D3DDA;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .main1 {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
   padding: 0px 2%;
   background-color: #FAFAFA;
+  position: relative;
+}
+.main1 .toggle-button1 {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  left: 10px;
+  z-index: 9999;
+  border: none;
+  padding: 0;
+}
+.main1 .toggle-button2 {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  right: 170px;
+  z-index: 9999;
+  border: none;
+  padding: 0;
 }
 .main1 .app_menu {
   padding-top: 80px;
   padding-left: 20px;
   background-color: white;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   padding-bottom: 40px;
+  z-index: 10;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .main1 .app_menu .links {
   display: flex;
@@ -85,8 +135,29 @@ body {
   margin-bottom: 18px;
   color: gray;
 }
+.main1 .app_menu .links a:hover {
+  opacity: 0.8;
+}
 .main1 .mainsec {
   padding-top: 50px;
+  position: sticky;
+}
+@media (max-width: 767px) {
+  .main1 .mainsec {
+    margin: auto;
+  }
+}
+@media (min-width: 768px) {
+  .main1 .mainsec {
+    margin-left: 17%;
+    margin-right: 25%;
+  }
+}
+.main1 .mainsec .headerstory {
+  padding-top: 20px;
+}
+.main1 .mainsec .headerstory h4 {
+  color: gray;
 }
 .main1 .mainsec .headerinner {
   margin: 5px 0;
@@ -105,36 +176,47 @@ body {
   text-decoration: none;
   color: gray;
 }
+.main1 .mainsec .headerinner .nav_s a:hover {
+  opacity: 0.8;
+}
 .main1 .mainsec .mainstosec {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: nowrap;
   margin-bottom: 30px;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 .main1 .mainsec .mainstosec .story {
-  width: 150px;
-  margin: 0 10px;
+  width: 130px;
+  margin: 0 3px;
 }
-.main1 .mainsec .mainstosec .story img {
+.main1 .mainsec .mainstosec .story a {
+  text-decoration: none;
+  color: black;
+}
+.main1 .mainsec .mainstosec .story a:hover {
+  opacity: 0.8;
+}
+.main1 .mainsec .mainstosec .story a img {
   width: 100%;
   border-radius: 5px;
 }
-.main1 .mainsec .mainstosec .story .sto-info {
+.main1 .mainsec .mainstosec .story a .sto-info {
   display: flex;
   width: 100%;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   align-items: center;
-  margin-top: -40px;
-  margin-left: -10px;
+  margin-top: -33px;
 }
-.main1 .mainsec .mainstosec .story .sto-info .img {
+.main1 .mainsec .mainstosec .story a .sto-info img {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  margin-right: 5px;
+  border: 1px double white;
 }
-.main1 .mainsec .mainstosec .story .sto-info h6 {
+.main1 .mainsec .mainstosec .story a .sto-info h6 {
   font-size: 10px;
   color: white;
   font-weight: bold;
@@ -151,7 +233,7 @@ body {
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 360px;
+  width: 350px;
   margin: 10px;
   background-color: white;
   border-radius: 10px;
@@ -159,6 +241,11 @@ body {
 .main1 .mainsec .mainpostsec .art a {
   text-decoration: none;
   color: black;
+  transition: transform 0.3s ease;
+}
+.main1 .mainsec .mainpostsec .art a:hover {
+  opacity: 0.8;
+  transform: scale(1.02);
 }
 .main1 .mainsec .mainpostsec .art a .post-info {
   width: 100%;
@@ -211,10 +298,14 @@ body {
   padding-top: 60px;
   padding-left: 20px;
   background-color: white;
-  position: sticky;
+  position: fixed;
   top: 0;
+  right: 0;
   height: 100%;
   padding-bottom: 80px;
+  z-index: 10;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .main1 .user_list .search-c {
   display: flex;
@@ -238,7 +329,14 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
 }
-.main1 .user_list .people .person {
+.main1 .user_list .people a {
+  text-decoration: none;
+  color: black;
+}
+.main1 .user_list .people a:hover {
+  opacity: 0.8;
+}
+.main1 .user_list .people a .person {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -246,11 +344,23 @@ body {
   align-items: center;
   margin: 12px 0;
 }
-.main1 .user_list .people .person img {
+.main1 .user_list .people a .person img {
   border-radius: 50%;
   margin-right: 5px;
 }
 
 .he {
   color: #6D3DDA;
+}
+
+footer {
+  background-color: white;
+  color: #6D3DDA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+footer .logo {
+  width: auto;
 }/*# sourceMappingURL=main.css.map */
