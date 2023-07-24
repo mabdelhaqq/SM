@@ -15,6 +15,9 @@ $background-color: gainsboro;
   border: none;
   outline: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: $background-color;
@@ -94,6 +97,179 @@ body {
         }
         
     }
+
+    .requests-dropdown {
+      position: absolute;
+      top: 50px;
+      right: 15px;
+      background-color:whitesmoke;
+      width: 300px;
+      border: 1px solid #CCC;
+      border-radius: 5px;
+      padding: 10px 5px;
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .request {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        padding-bottom: 15px;
+
+        .contentreq {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          justify-content :center;
+          align-content: flex-start;
+
+          .opt {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            align-items: center;
+          }
+        }
+      }
+
+    }
+
+
+    .messages-dropdown {
+      position: absolute;
+      top: 50px;
+      right: 15px;
+      background-color:whitesmoke;
+      width: 300px;
+      border: 1px solid #CCC;
+      border-radius: 5px;
+      padding: 10px 5px;
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .message {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 5px;
+
+        .contentmsg {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          justify-content :center;
+          align-content: flex-start;
+
+          .namem {
+            color: black;
+            font-size: 15px;
+          }
+          .contentm {
+            color: gray;
+            font-size: 13px;
+          }
+        }
+      }
+
+    }
+
+    .notifications-dropdown {
+      position: absolute;
+      top: 50px;
+      right: 15px;
+      background-color:whitesmoke;
+      width: 300px;
+      border: 1px solid #CCC;
+      border-radius: 5px;
+      padding: 10px 5px;
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .notification {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 5px;
+      }
+
+    }
+
+    .personal-dropdown {
+      position: absolute;
+      top: 50px;
+      right: 15px;
+      background-color:whitesmoke;
+      width: 300px;
+      border: 1px solid #CCC;
+      border-radius: 5px;
+      padding: 10px 5px;
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .option {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 15px;
+        padding-top: 15px;
+
+        h6 {
+          font-size: 14px;
+        }
+      }
+
+    }
+
+    .arrow-dropdown {
+      position: absolute;
+      top: 50px;
+      right: 15px;
+      background-color:whitesmoke;
+      width: 300px;
+      border: 1px solid #CCC;
+      border-radius: 5px;
+      padding: 10px 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .op {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 15px;
+        padding-top: 15px;
+
+        h6 {
+          font-size: 14px;
+        }
+      }
+
+    }
   }
 }
 
@@ -104,8 +280,6 @@ body {
   padding: 0px 2%;
   background-color: #FAFAFA;
   position: relative;
-  
-
 
   .toggle-button1 {
     position: fixed;
@@ -155,6 +329,9 @@ body {
           opacity: .8;
         }
       }
+    }
+    @media ( max-width: 767px ){
+      width: 250px;
     }
   }
 
@@ -381,7 +558,10 @@ body {
         }
       }
     }
-  }    
+  }
+  @media ( max-width: 767px ){
+    width: 300px;
+  }   
   }
 }
 .he {

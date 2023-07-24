@@ -9,9 +9,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="stylee.css">
+  
 </head>
 <body>
-    
 <header class="row mainhead">
     <div class="right col-6">
         <a href="#"><img src="images/logo.png" alt="logo_image" class="logo" height="30px"></a>
@@ -21,11 +21,104 @@
         </div>
     </div>
     <nav class="col-6 mainnav">
-        <a href="#"><i class="fa-solid fa-user-group" style="color: #646464;"></i></a>
-        <a href="#"><i class="fa-brands fa-rocketchat new" style="color: #646464;"></i></a>
-        <a href="#"><i class="fa-solid fa-bell new" style="color: #646464;"></i></a>
-        <a href="#"><img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=A" width="25px" height="25px" style="border-radius: 50%;"></a>
-        <a href="#"><i class="fa-solid fa-arrow-right fa-rotate-90" style="color: #646464;"></i></a>
+        <a href="#" id="requestsButton"><i class="fa-solid fa-user-group" style="color: #646464;"></i></a>
+        <div id="requestsDropdown" class="requests-dropdown d-none">
+            <a href="#"><div class="request">
+                <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=d" width="50px" height="50px" style="border-radius: 50%;">
+                <div class="contentreq">
+                    <h6 class="namem">Sara Mendoza sent you a friend request</h6>
+                    <div class="opt">
+                        <button class="btn btn-primary">Accept</button>
+                        <button class="btn btn-danger">Ignore</button>
+                    </div>
+                </div>
+            </div></a>
+            <a href="#"><div class="request">
+                <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=f" width="50px" height="50px" style="border-radius: 50%;">
+                <div class="contentreq">
+                    <h6 class="namem">Ronald Roocets sent you a friend request</h6>
+                    <div class="opt">
+                        <button class="btn btn-primary">Accept</button>
+                        <button class="btn btn-danger">Ignore</button>
+                    </div>
+                </div>
+            </div></a>
+
+            
+        </div>    
+        <a href="#" id="messagesButton"><i class="fa-brands fa-rocketchat new" style="color: #646464;"></i></a>
+        <div id="messagesDropdown" class="messages-dropdown d-none">
+            <a href="#"><div class="message">
+                <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=l" width="50px" height="50px" style="border-radius: 50%;">
+                <div class="contentmsg">
+                    <h6 class="namem">Sara Mendoza</h6>
+                    <p class="contentm">Hello</p>
+                </div>
+            </div></a>
+            <a href="#"><div class="message">
+                <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=g" width="50px" height="50px" style="border-radius: 50%;">
+                <div class="contentmsg">
+                    <h6 class="namem">Maria Jackson</h6>
+                    <p class="contentm">Good morning</p>
+                </div>
+            </div></a>
+            <a href="#"><div class="message">
+                <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=z" width="50px" height="50px" style="border-radius: 50%;">
+                <div class="contentmsg">
+                    <h6 class="namem">Alex Guerrero</h6>
+                    <p class="contentm">How are you?</p>
+                </div>
+            </div></a>
+            
+        </div>    
+        <a href="#" id="notificationsButton"><i class="fa-solid fa-bell new" style="color: #646464;"></i></a>
+        <div id="notificationsDropdown" class="notifications-dropdown d-none">
+            <a href="#"><div class="notification">
+                <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=b" width="50px" height="50px" style="border-radius: 50%;">
+                <p>Maria Jackson commented on your post</p>
+            </div></a>
+            <a href="#"><div class="notification">
+                <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=o" width="50px" height="50px" style="border-radius: 50%;">
+                <p>Ronald Roocets liked your post</p>
+            </div></a>
+            <a href="#"><div class="notification">
+                <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=s" width="50px" height="50px" style="border-radius: 50%;">
+                <p>Niok Powoell invited you to join group</p>
+            </div></a>
+            <a href="#"><div class="notification">
+                <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=c" width="50px" height="50px" style="border-radius: 50%;">
+                <p>Ronald Roocets liked your story</p>
+            </div></a>
+        </div>    
+        <a href="#" id="personalButton"><img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=A" width="25px" height="25px" style="border-radius: 50%;"></a>
+        <div id="presonalDropdown" class="personal-dropdown d-none">
+            <a href="#"><div class="option">
+                <i class="fa-solid fa-gear fa-2xl" style="color: #646464;"></i>
+                <h6>Settings and privacy</h6>
+            </div></a>
+            <a href="#"><div class="option">
+                <i class="fa-solid fa-circle-info fa-2xl" style="color: #646464;"></i>
+                <h6>Help and support</h6>
+            </div></a>
+            <a href="#"><div class="option">
+                <i class="fa-solid fa-universal-access fa-2xl" style="color: #646464;"></i>
+                <h6>Presentation and accessibility</h6>
+            </div></a>
+           
+
+            
+        </div>    
+        <a href="#" id="arrowButton"><i class="fa-solid fa-arrow-right fa-rotate-90" style="color: #646464;"></i></a>
+        <div id="arrowDropdown" class="arrow-dropdown d-none">
+            <a href="#"><div class="op">
+                <i class="fa-solid fa-circle-half-stroke fa-2xl" style="color: #646464;"></i>
+                <h6>Dark mode</h6>
+            </div></a>
+            <a href="#"><div class="op">
+                <i class="fa-solid fa-right-from-bracket fa-2xl" style="color: #646464;"></i>
+                <h6>Log out</h6>
+            </div></a>
+        </div> 
     </nav>
 </header>
 <main class="main1 row ms-0 me-0">
@@ -127,7 +220,7 @@
                         <img src="images/p1.jpg" width="330px" height="180px" class="imgpr">
                         <div class="post-info row">
                             <div class="na col-6">
-                                <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=z" width="35px" height="35px" class="au">
+                                <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=" width="35px" height="35px" class="au">
                                 <h6>Nancy Lee</h6>
                             </div>
                             <div class="like col-3">
@@ -147,10 +240,10 @@
                     </article>
                     <article class="col-12 col-md-6 art">
                         <a href="#">
-                        <img src="images/p1.jpg" width="330px" height="180px" class="imgpr">
+                        <img src="images/p2.jpg" width="330px" height="180px" class="imgpr">
                         <div class="post-info row">
                             <div class="na col-6">
-                                <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=z" width="35px" height="35px" class="au">
+                                <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=i" width="35px" height="35px" class="au">
                                 <h6>Nancy Lee</h6>
                             </div>
                             <div class="like col-3">
@@ -170,10 +263,10 @@
                     </article>
                     <article class="col-12 col-md-6 art">
                         <a href="#">
-                        <img src="images/p1.jpg" width="330px" height="180px" class="imgpr">
+                        <img src="images/p3.jpg" width="330px" height="180px" class="imgpr">
                         <div class="post-info row">
                             <div class="na col-6">
-                                <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=z" width="35px" height="35px" class="au">
+                                <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=o" width="35px" height="35px" class="au">
                                 <h6>Nancy Lee</h6>
                             </div>
                             <div class="like col-3">
@@ -193,10 +286,10 @@
                     </article>
                     <article class="col-12 col-md-6 art">
                         <a href="#">
-                        <img src="images/p1.jpg" width="330px" height="180px" class="imgpr">
+                        <img src="images/p4.jpg" width="330px" height="180px" class="imgpr">
                         <div class="post-info row">
                             <div class="na col-6">
-                                <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=z" width="35px" height="35px" class="au">
+                                <img src="https://api.dicebear.com/6.x/avataaars/svg?backgroundColor=c0aede&seed=p" width="35px" height="35px" class="au">
                                 <h6>Nancy Lee</h6>
                             </div>
                             <div class="like col-3">
@@ -214,6 +307,7 @@
                         </div>
                         </a>
                     </article>
+                    
 
                 </section>
                     
